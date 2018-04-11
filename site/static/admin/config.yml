@@ -16,11 +16,8 @@ collections: # A list of collections the CMS should be able to edit
     name: "gallery"
     folder: "site/content/gallery"
     create: true
-    optional: true
-    widget: "list"
     fields:
       - {label: "Title", name: "imgTitle", widget: "string"}
-      - label: "Image"
         name: "image"
         widget: "list"
         fields:
