@@ -16,10 +16,16 @@ collections: # A list of collections the CMS should be able to edit
     name: "gallery"
     folder: "site/content/gallery"
     create: true
+    optional: true
     widget: "list"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Gallery Image", name: "image", widget: "image"}
+      - {label: "Title", name: "imgTitle", widget: "string"}
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {label: "Description", name: "imgDesc", widget: "string"}
+          - {label: "URL", name: "url", widget: "image"}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
