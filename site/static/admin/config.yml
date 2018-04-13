@@ -29,6 +29,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
+    folder: "site/content/pages"
+    create: true
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "special-pages"
+    label: "Special Pages"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
