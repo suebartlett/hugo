@@ -6,4 +6,5 @@ images:
   - imgDesc: name2
     url: /img/about-jumbotron.jpg
 ---
-
+pswpshortcode below:
+{{< pswp-init >}}

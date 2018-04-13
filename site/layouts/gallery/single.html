@@ -6,11 +6,11 @@
 		{{ .Content }}
 
 		<div class="flex-ns mb3">
-	        	{{ range .Params.images }}
-				<div>
-					<img src="{{ .url }}" />
-				</div>
+			<gallery>
+	  	{{ range .Params.images }}
+					<figure src="{{ .url }}" caption="{{ .imgDesc }}" />
 			{{ end }}
+			</gallery >
 		</div>
 
 	</div>
