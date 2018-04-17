@@ -6,9 +6,17 @@
 		{{ .Content }}
 
 		<div class="flex-ns mb3">
-			<gallery>
+			<gallery caption-effect="fade" >
 	  	{{ range .Params.images }}
-					<figure src="{{ .url }}" caption="{{ .imgDesc }}" />
+					<figure>
+						<a>
+							<img src="{{ .url }}" caption="{{ .imgDesc }}" />
+						</a>
+						<figcaption>
+							<h4>Title</h4>
+							<p>{{ .imgDesc }}</p>
+						</figcaption>
+					</figure>
 			{{ end }}
 			</gallery >
 		</div>

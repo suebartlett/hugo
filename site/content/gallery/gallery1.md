@@ -8,3 +8,7 @@ images:
 ---
 pswpshortcode below:
 {{< pswp-init >}}
+<gallery>
+{{< figure src="/img/about-direct-sourcing.jpg" >}}
+{{< figure src="/img/about-jumbotron.jpg" >}}
+</gallery>
